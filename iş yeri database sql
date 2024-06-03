@@ -1,0 +1,15 @@
+CREATE TABLE Calisanlar (
+    calisan_id INT PRIMARY KEY,
+    ad VARCHAR(50),
+    soyad VARCHAR(50),
+    departman VARCHAR(50),
+    maas DECIMAL(10, 2)
+);
+
+INSERT INTO Calisanlar (calisan_id, ad, soyad, departman, maas)
+VALUES 
+    (1, 'Ahmet', 'Yılmaz', 'IT', 5000.00),
+    (2, 'Ayşe', 'Kaya', 'Muhasebe', 4500.00),
+    (3, 'Mehmet', 'Demir', 'Pazarlama', 4800.00);
+
+SELECT * FROM Calisanlar;

@@ -1,0 +1,15 @@
+CREATE TABLE Musteriler (
+    musteri_id INT PRIMARY KEY,
+    ad VARCHAR(50),
+    soyad VARCHAR(50),
+    adres VARCHAR(100),
+    telefon VARCHAR(15)
+);
+
+INSERT INTO Musteriler (musteri_id, ad, soyad, adres, telefon)
+VALUES 
+    (1, 'Ali', 'Yılmaz', 'Ankara', '555-123-4567'),
+    (2, 'Ayşe', 'Kaya', 'İstanbul', '555-234-5678'),
+    (3, 'Mehmet', 'Demir', 'İzmir', '555-345-6789');
+
+SELECT * FROM Musteriler;

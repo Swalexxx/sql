@@ -1,0 +1,14 @@
+CREATE TABLE Ogrenciler (
+    ogrenci_id INT PRIMARY KEY,
+    ad VARCHAR(50),
+    soyad VARCHAR(50),
+    yas INT
+);
+
+INSERT INTO Ogrenciler (ogrenci_id, ad, soyad, yas)
+VALUES 
+    (1, 'Ahmet', 'Yılmaz', 20),
+    (2, 'Ayşe', 'Kaya', 21),
+    (3, 'Mehmet', 'Demir', 22);
+
+SELECT * FROM Ogrenciler;

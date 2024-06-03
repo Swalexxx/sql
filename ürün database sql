@@ -1,0 +1,15 @@
+CREATE TABLE Urunler (
+    urun_id INT PRIMARY KEY,
+    ad VARCHAR(100),
+    kategori VARCHAR(50),
+    stok_miktari INT,
+    fiyat DECIMAL(10, 2)
+);
+
+INSERT INTO Urunler (urun_id, ad, kategori, stok_miktari, fiyat)
+VALUES 
+    (1, 'Laptop', 'Bilgisayar', 20, 3500.00),
+    (2, 'Telefon', 'Elektronik', 30, 2500.00),
+    (3, 'Kamera', 'Fotoğraf', 15, 1500.00);
+
+SELECT * FROM Urunler;
